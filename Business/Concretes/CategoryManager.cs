@@ -27,7 +27,7 @@ namespace Business.Concretes
 
         public async Task<Paginate<Category>> GetListAsync()
         {
-            var result = await _categoryDal.GetListAsync(null,null,null,2,5);
+            var result = await _categoryDal.GetListAsync();
             return result;
         }
     }
